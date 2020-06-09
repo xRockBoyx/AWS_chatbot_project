@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		249A349124823CFB008F8BD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A349024823CFB008F8BD0 /* AppDelegate.swift */; };
+		249A349324823CFB008F8BD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A349224823CFB008F8BD0 /* SceneDelegate.swift */; };
+		249A349524823CFB008F8BD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A349424823CFB008F8BD0 /* ViewController.swift */; };
+		249A349824823CFB008F8BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249A349624823CFB008F8BD0 /* Main.storyboard */; };
+		249A349A24823CFC008F8BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 249A349924823CFC008F8BD0 /* Assets.xcassets */; };
+		249A349D24823CFC008F8BD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249A349B24823CFC008F8BD0 /* LaunchScreen.storyboard */; };
+		249A3520248593EB008F8BD0 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A351F248593EB008F8BD0 /* WebViewController.swift */; };
+		249A3522248597A7008F8BD0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249A3521248597A7008F8BD0 /* WebKit.framework */; };
+		73809FAFAD2AE9513DA1E3AD /* Pods_aws_chatbot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C709E03D17C59F42CE8029 /* Pods_aws_chatbot.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		249A348D24823CFB008F8BD0 /* aws_chatbot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aws_chatbot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		249A349024823CFB008F8BD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		249A349224823CFB008F8BD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		249A349424823CFB008F8BD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		249A349724823CFB008F8BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		249A349924823CFC008F8BD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		249A349C24823CFC008F8BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		249A349E24823CFC008F8BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		249A34A724849560008F8BD0 /* OHMySQLQueryContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHMySQLQueryContext.m; sourceTree = "<group>"; };
+		249A34A824849560008F8BD0 /* OHMySQLStoreCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHMySQLStoreCoordinator.h; sourceTree = "<group>"; };
+		249A34A924849560008F8BD0 /* OHMySQLQueryRequestFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHMySQLQueryRequestFactory.m; sourceTree = "<group>"; };
+		249A34AA24849560008F8BD0 /* OHMySQLContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHMySQLContainer.h; sourceTree = "<group>"; };
+		249A34AC24849560008F8BD0 /* OHCharsetEncoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHCharsetEncoding.m; sourceTree = "<group>"; };
+		249A34AD24849560008F8BD0 /* OHProtocolType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHProtocolType.h; sourceTree = "<group>"; };
+		249A34AE24849560008F8BD0 /* OHJoinConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHJoinConstants.m; sourceTree = "<group>"; };
+		249A34AF24849560008F8BD0 /* OHLogging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHLogging.h; sourceTree = "<group>"; };
+		249A34B024849560008F8BD0 /* OHCharsetEncoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHCharsetEncoding.h; sourceTree = "<group>"; };
+		249A34B124849560008F8BD0 /* OHJoinConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHJoinConstants.h; sourceTree = "<group>"; };
+		249A34B224849560008F8BD0 /* OHConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHConstants.h; sourceTree = "<group>"; };
+		249A34B324849560008F8BD0 /* OHRefreshOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHRefreshOptions.h; sourceTree = "<group>"; };
+		249A34B424849560008F8BD0 /* OHResultErrorType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHResultErrorType.h; sourceTree = "<group>"; };
+		249A34B524849560008F8BD0 /* OHMySQLSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHMySQLSerialization.h; sourceTree = "<group>"; };
+		249A34B624849560008F8BD0 /* OHSerializationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHSerializationProtocol.h; sourceTree = "<group>"; };
+		249A34B824849560008F8BD0 /* OHSSLConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHSSLConfig.h; sourceTree = "<group>"; };
+		249A34B924849560008F8BD0 /* OHMySQLTimeline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHMySQLTimeline.h; sourceTree = "<group>"; };
+		249A34BA24849560008F8BD0 /* OHMySQLUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHMySQLUser.h; sourceTree = "<group>"; };
+		249A34BB24849560008F8BD0 /* OHMySQLStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHMySQLStore.h; sourceTree = "<group>"; };
+		249A34BC24849560008F8BD0 /* OHMySQLQueryRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHMySQLQueryRequest.h; sourceTree = "<group>"; };
+		249A34BD24849560008F8BD0 /* OHSSLConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHSSLConfig.m; sourceTree = "<group>"; };
+		249A34BE24849560008F8BD0 /* OHMySQLStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHMySQLStore.m; sourceTree = "<group>"; };
+		249A34BF24849560008F8BD0 /* OHMySQLUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHMySQLUser.m; sourceTree = "<group>"; };
+		249A34C024849560008F8BD0 /* OHMySQLTimeline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHMySQLTimeline.m; sourceTree = "<group>"; };
+		249A34C124849560008F8BD0 /* OHMySQLQueryRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHMySQLQueryRequest.m; sourceTree = "<group>"; };
+		249A34C224849560008F8BD0 /* OHMySQLQueryContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHMySQLQueryContext.h; sourceTree = "<group>"; };
+		249A34C324849560008F8BD0 /* OHMySQL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHMySQL.h; sourceTree = "<group>"; };
+		249A34C424849560008F8BD0 /* OHMappingProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHMappingProtocol.h; sourceTree = "<group>"; };
+		249A34C524849560008F8BD0 /* OHMySQLContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHMySQLContainer.m; sourceTree = "<group>"; };
+		249A34C624849560008F8BD0 /* OHMySQLQueryRequestFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHMySQLQueryRequestFactory.h; sourceTree = "<group>"; };
+		249A34C724849560008F8BD0 /* OHMySQLStoreCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHMySQLStoreCoordinator.m; sourceTree = "<group>"; };
+		249A34CA24849560008F8BD0 /* mysql_com_server.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql_com_server.h; sourceTree = "<group>"; };
+		249A34CB24849560008F8BD0 /* byte_order_generic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = byte_order_generic.h; sourceTree = "<group>"; };
+		249A34CC24849560008F8BD0 /* my_command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_command.h; sourceTree = "<group>"; };
+		249A34CD24849560008F8BD0 /* thr_rwlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = thr_rwlock.h; sourceTree = "<group>"; };
+		249A34CE24849560008F8BD0 /* my_byteorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_byteorder.h; sourceTree = "<group>"; };
+		249A34CF24849560008F8BD0 /* my_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_config.h; sourceTree = "<group>"; };
+		249A34D024849560008F8BD0 /* my_thread_local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_thread_local.h; sourceTree = "<group>"; };
+		249A34D124849560008F8BD0 /* keycache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = keycache.h; sourceTree = "<group>"; };
+		249A34D224849560008F8BD0 /* binary_log_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = binary_log_types.h; sourceTree = "<group>"; };
+		249A34D324849560008F8BD0 /* mysqld_ername.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysqld_ername.h; sourceTree = "<group>"; };
+		249A34D424849560008F8BD0 /* m_ctype.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = m_ctype.h; sourceTree = "<group>"; };
+		249A34D524849560008F8BD0 /* big_endian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = big_endian.h; sourceTree = "<group>"; };
+		249A34D624849560008F8BD0 /* my_global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_global.h; sourceTree = "<group>"; };
+		249A34D724849560008F8BD0 /* little_endian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = little_endian.h; sourceTree = "<group>"; };
+		249A34D824849560008F8BD0 /* thr_cond.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = thr_cond.h; sourceTree = "<group>"; };
+		249A34D924849560008F8BD0 /* mysql_version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql_version.h; sourceTree = "<group>"; };
+		249A34DA24849560008F8BD0 /* sslopt-vars.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sslopt-vars.h"; sourceTree = "<group>"; };
+		249A34DB24849560008F8BD0 /* my_getopt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_getopt.h; sourceTree = "<group>"; };
+		249A34DC24849560008F8BD0 /* decimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = decimal.h; sourceTree = "<group>"; };
+		249A34DD24849560008F8BD0 /* sslopt-case.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sslopt-case.h"; sourceTree = "<group>"; };
+		249A34DE24849560008F8BD0 /* m_string.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = m_string.h; sourceTree = "<group>"; };
+		249A34DF24849560008F8BD0 /* mysql_time.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql_time.h; sourceTree = "<group>"; };
+		249A34E024849560008F8BD0 /* my_thread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_thread.h; sourceTree = "<group>"; };
+		249A34E124849560008F8BD0 /* my_list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_list.h; sourceTree = "<group>"; };
+		249A34E224849560008F8BD0 /* sslopt-longopts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sslopt-longopts.h"; sourceTree = "<group>"; };
+		249A34E324849560008F8BD0 /* typelib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = typelib.h; sourceTree = "<group>"; };
+		249A34E424849560008F8BD0 /* mysql_com.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql_com.h; sourceTree = "<group>"; };
+		249A34E624849560008F8BD0 /* mysql_lex_string.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql_lex_string.h; sourceTree = "<group>"; };
+		249A34E724849560008F8BD0 /* service_mysql_alloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = service_mysql_alloc.h; sourceTree = "<group>"; };
+		249A34E824849560008F8BD0 /* plugin_auth_common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plugin_auth_common.h; sourceTree = "<group>"; };
+		249A34E924849560008F8BD0 /* plugin_trace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plugin_trace.h; sourceTree = "<group>"; };
+		249A34EA24849560008F8BD0 /* get_password.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = get_password.h; sourceTree = "<group>"; };
+		249A34EB24849560008F8BD0 /* service_my_snprintf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = service_my_snprintf.h; sourceTree = "<group>"; };
+		249A34EC24849560008F8BD0 /* client_plugin.h.pp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = client_plugin.h.pp; sourceTree = "<group>"; };
+		249A34ED24849560008F8BD0 /* client_plugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = client_plugin.h; sourceTree = "<group>"; };
+		249A34EF24849560008F8BD0 /* mysql_ps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql_ps.h; sourceTree = "<group>"; };
+		249A34F024849560008F8BD0 /* mysql_transaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql_transaction.h; sourceTree = "<group>"; };
+		249A34F124849560008F8BD0 /* mysql_file.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql_file.h; sourceTree = "<group>"; };
+		249A34F224849560008F8BD0 /* mysql_idle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql_idle.h; sourceTree = "<group>"; };
+		249A34F324849560008F8BD0 /* psi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = psi.h; sourceTree = "<group>"; };
+		249A34F424849560008F8BD0 /* mysql_stage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql_stage.h; sourceTree = "<group>"; };
+		249A34F524849560008F8BD0 /* mysql_table.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql_table.h; sourceTree = "<group>"; };
+		249A34F624849560008F8BD0 /* psi_memory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = psi_memory.h; sourceTree = "<group>"; };
+		249A34F724849560008F8BD0 /* psi_base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = psi_base.h; sourceTree = "<group>"; };
+		249A34F824849560008F8BD0 /* mysql_socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql_socket.h; sourceTree = "<group>"; };
+		249A34F924849560008F8BD0 /* mysql_sp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql_sp.h; sourceTree = "<group>"; };
+		249A34FA24849560008F8BD0 /* mysql_statement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql_statement.h; sourceTree = "<group>"; };
+		249A34FB24849560008F8BD0 /* mysql_thread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql_thread.h; sourceTree = "<group>"; };
+		249A34FC24849560008F8BD0 /* mysql_memory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql_memory.h; sourceTree = "<group>"; };
+		249A34FD24849560008F8BD0 /* mysql_mdl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql_mdl.h; sourceTree = "<group>"; };
+		249A34FE24849560008F8BD0 /* client_authentication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = client_authentication.h; sourceTree = "<group>"; };
+		249A34FF24849560008F8BD0 /* my_dir.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_dir.h; sourceTree = "<group>"; };
+		249A350024849560008F8BD0 /* thr_mutex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = thr_mutex.h; sourceTree = "<group>"; };
+		249A350124849560008F8BD0 /* mysql.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql.h; sourceTree = "<group>"; };
+		249A350224849560008F8BD0 /* my_xml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_xml.h; sourceTree = "<group>"; };
+		249A350324849560008F8BD0 /* sql_common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sql_common.h; sourceTree = "<group>"; };
+		249A350424849560008F8BD0 /* my_alloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_alloc.h; sourceTree = "<group>"; };
+		249A350524849560008F8BD0 /* byte_order_generic_x86.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = byte_order_generic_x86.h; sourceTree = "<group>"; };
+		249A350624849560008F8BD0 /* mysqld_error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysqld_error.h; sourceTree = "<group>"; };
+		249A350724849560008F8BD0 /* my_compiler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_compiler.h; sourceTree = "<group>"; };
+		249A350824849560008F8BD0 /* my_sys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_sys.h; sourceTree = "<group>"; };
+		249A350924849560008F8BD0 /* sql_state.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sql_state.h; sourceTree = "<group>"; };
+		249A350A24849560008F8BD0 /* my_dbug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_dbug.h; sourceTree = "<group>"; };
+		249A350B24849560008F8BD0 /* errmsg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = errmsg.h; sourceTree = "<group>"; };
+		249A350C24849560008F8BD0 /* mysql_embed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysql_embed.h; sourceTree = "<group>"; };
+		249A350E24849560008F8BD0 /* libmysqlclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmysqlclient.a; sourceTree = "<group>"; };
+		249A351024849560008F8BD0 /* libmysqlclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmysqlclient.a; sourceTree = "<group>"; };
+		249A351224849560008F8BD0 /* NSString+OHSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+OHSerialization.m"; sourceTree = "<group>"; };
+		249A351324849560008F8BD0 /* NSString+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
+		249A351424849560008F8BD0 /* NSString+Escaping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Escaping.h"; sourceTree = "<group>"; };
+		249A351524849560008F8BD0 /* NSData+OHSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+OHSerialization.h"; sourceTree = "<group>"; };
+		249A351624849560008F8BD0 /* NSNumber+OHSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+OHSerialization.h"; sourceTree = "<group>"; };
+		249A351724849560008F8BD0 /* NSObject+Mapping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Mapping.m"; sourceTree = "<group>"; };
+		249A351824849560008F8BD0 /* NSString+Escaping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Escaping.m"; sourceTree = "<group>"; };
+		249A351924849560008F8BD0 /* NSString+Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
+		249A351A24849560008F8BD0 /* NSString+OHSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+OHSerialization.h"; sourceTree = "<group>"; };
+		249A351B24849560008F8BD0 /* NSData+OHSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+OHSerialization.m"; sourceTree = "<group>"; };
+		249A351C24849560008F8BD0 /* NSNumber+OHSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+OHSerialization.m"; sourceTree = "<group>"; };
+		249A351D24849560008F8BD0 /* NSObject+Mapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Mapping.h"; sourceTree = "<group>"; };
+		249A351E24849560008F8BD0 /* OHMySQLSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHMySQLSerialization.m; sourceTree = "<group>"; };
+		249A351F248593EB008F8BD0 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		249A3521248597A7008F8BD0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		30C709E03D17C59F42CE8029 /* Pods_aws_chatbot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aws_chatbot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3E104E16AEC0C297DC43B9 /* Pods-aws_chatbot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aws_chatbot.debug.xcconfig"; path = "Target Support Files/Pods-aws_chatbot/Pods-aws_chatbot.debug.xcconfig"; sourceTree = "<group>"; };
+		9473264818E99AAE4EFFDE40 /* Pods-aws_chatbot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aws_chatbot.release.xcconfig"; path = "Target Support Files/Pods-aws_chatbot/Pods-aws_chatbot.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		249A348A24823CFB008F8BD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249A3522248597A7008F8BD0 /* WebKit.framework in Frameworks */,
+				73809FAFAD2AE9513DA1E3AD /* Pods_aws_chatbot.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		249A348424823CFB008F8BD0 = {
+			isa = PBXGroup;
+			children = (
+				249A348F24823CFB008F8BD0 /* aws_chatbot */,
+				249A348E24823CFB008F8BD0 /* Products */,
+				7D8355019052CD8883A9B46B /* Pods */,
+				CA156F2F8A3A56B7EAEC50F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		249A348E24823CFB008F8BD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				249A348D24823CFB008F8BD0 /* aws_chatbot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		249A348F24823CFB008F8BD0 /* aws_chatbot */ = {
+			isa = PBXGroup;
+			children = (
+				249A349024823CFB008F8BD0 /* AppDelegate.swift */,
+				249A349224823CFB008F8BD0 /* SceneDelegate.swift */,
+				249A349424823CFB008F8BD0 /* ViewController.swift */,
+				249A349624823CFB008F8BD0 /* Main.storyboard */,
+				249A349924823CFC008F8BD0 /* Assets.xcassets */,
+				249A349B24823CFC008F8BD0 /* LaunchScreen.storyboard */,
+				249A349E24823CFC008F8BD0 /* Info.plist */,
+				249A351F248593EB008F8BD0 /* WebViewController.swift */,
+			);
+			path = aws_chatbot;
+			sourceTree = "<group>";
+		};
+		249A34A624849560008F8BD0 /* OHMySQL */ = {
+			isa = PBXGroup;
+			children = (
+				249A34A724849560008F8BD0 /* OHMySQLQueryContext.m */,
+				249A34A824849560008F8BD0 /* OHMySQLStoreCoordinator.h */,
+				249A34A924849560008F8BD0 /* OHMySQLQueryRequestFactory.m */,
+				249A34AA24849560008F8BD0 /* OHMySQLContainer.h */,
+				249A34AB24849560008F8BD0 /* Constants */,
+				249A34B524849560008F8BD0 /* OHMySQLSerialization.h */,
+				249A34B624849560008F8BD0 /* OHSerializationProtocol.h */,
+				249A34B724849560008F8BD0 /* Models */,
+				249A34C224849560008F8BD0 /* OHMySQLQueryContext.h */,
+				249A34C324849560008F8BD0 /* OHMySQL.h */,
+				249A34C424849560008F8BD0 /* OHMappingProtocol.h */,
+				249A34C524849560008F8BD0 /* OHMySQLContainer.m */,
+				249A34C624849560008F8BD0 /* OHMySQLQueryRequestFactory.h */,
+				249A34C724849560008F8BD0 /* OHMySQLStoreCoordinator.m */,
+				249A34C824849560008F8BD0 /* lib */,
+				249A351124849560008F8BD0 /* Categories */,
+				249A351E24849560008F8BD0 /* OHMySQLSerialization.m */,
+			);
+			name = OHMySQL;
+			path = "../../OHMySQL-master/OHMySQL";
+			sourceTree = "<group>";
+		};
+		249A34AB24849560008F8BD0 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				249A34AC24849560008F8BD0 /* OHCharsetEncoding.m */,
+				249A34AD24849560008F8BD0 /* OHProtocolType.h */,
+				249A34AE24849560008F8BD0 /* OHJoinConstants.m */,
+				249A34AF24849560008F8BD0 /* OHLogging.h */,
+				249A34B024849560008F8BD0 /* OHCharsetEncoding.h */,
+				249A34B124849560008F8BD0 /* OHJoinConstants.h */,
+				249A34B224849560008F8BD0 /* OHConstants.h */,
+				249A34B324849560008F8BD0 /* OHRefreshOptions.h */,
+				249A34B424849560008F8BD0 /* OHResultErrorType.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		249A34B724849560008F8BD0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				249A34B824849560008F8BD0 /* OHSSLConfig.h */,
+				249A34B924849560008F8BD0 /* OHMySQLTimeline.h */,
+				249A34BA24849560008F8BD0 /* OHMySQLUser.h */,
+				249A34BB24849560008F8BD0 /* OHMySQLStore.h */,
+				249A34BC24849560008F8BD0 /* OHMySQLQueryRequest.h */,
+				249A34BD24849560008F8BD0 /* OHSSLConfig.m */,
+				249A34BE24849560008F8BD0 /* OHMySQLStore.m */,
+				249A34BF24849560008F8BD0 /* OHMySQLUser.m */,
+				249A34C024849560008F8BD0 /* OHMySQLTimeline.m */,
+				249A34C124849560008F8BD0 /* OHMySQLQueryRequest.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		249A34C824849560008F8BD0 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				249A34C924849560008F8BD0 /* include */,
+				249A350D24849560008F8BD0 /* ios */,
+				249A350F24849560008F8BD0 /* mac */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		249A34C924849560008F8BD0 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				249A34CA24849560008F8BD0 /* mysql_com_server.h */,
+				249A34CB24849560008F8BD0 /* byte_order_generic.h */,
+				249A34CC24849560008F8BD0 /* my_command.h */,
+				249A34CD24849560008F8BD0 /* thr_rwlock.h */,
+				249A34CE24849560008F8BD0 /* my_byteorder.h */,
+				249A34CF24849560008F8BD0 /* my_config.h */,
+				249A34D024849560008F8BD0 /* my_thread_local.h */,
+				249A34D124849560008F8BD0 /* keycache.h */,
+				249A34D224849560008F8BD0 /* binary_log_types.h */,
+				249A34D324849560008F8BD0 /* mysqld_ername.h */,
+				249A34D424849560008F8BD0 /* m_ctype.h */,
+				249A34D524849560008F8BD0 /* big_endian.h */,
+				249A34D624849560008F8BD0 /* my_global.h */,
+				249A34D724849560008F8BD0 /* little_endian.h */,
+				249A34D824849560008F8BD0 /* thr_cond.h */,
+				249A34D924849560008F8BD0 /* mysql_version.h */,
+				249A34DA24849560008F8BD0 /* sslopt-vars.h */,
+				249A34DB24849560008F8BD0 /* my_getopt.h */,
+				249A34DC24849560008F8BD0 /* decimal.h */,
+				249A34DD24849560008F8BD0 /* sslopt-case.h */,
+				249A34DE24849560008F8BD0 /* m_string.h */,
+				249A34DF24849560008F8BD0 /* mysql_time.h */,
+				249A34E024849560008F8BD0 /* my_thread.h */,
+				249A34E124849560008F8BD0 /* my_list.h */,
+				249A34E224849560008F8BD0 /* sslopt-longopts.h */,
+				249A34E324849560008F8BD0 /* typelib.h */,
+				249A34E424849560008F8BD0 /* mysql_com.h */,
+				249A34E524849560008F8BD0 /* mysql */,
+				249A34FF24849560008F8BD0 /* my_dir.h */,
+				249A350024849560008F8BD0 /* thr_mutex.h */,
+				249A350124849560008F8BD0 /* mysql.h */,
+				249A350224849560008F8BD0 /* my_xml.h */,
+				249A350324849560008F8BD0 /* sql_common.h */,
+				249A350424849560008F8BD0 /* my_alloc.h */,
+				249A350524849560008F8BD0 /* byte_order_generic_x86.h */,
+				249A350624849560008F8BD0 /* mysqld_error.h */,
+				249A350724849560008F8BD0 /* my_compiler.h */,
+				249A350824849560008F8BD0 /* my_sys.h */,
+				249A350924849560008F8BD0 /* sql_state.h */,
+				249A350A24849560008F8BD0 /* my_dbug.h */,
+				249A350B24849560008F8BD0 /* errmsg.h */,
+				249A350C24849560008F8BD0 /* mysql_embed.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		249A34E524849560008F8BD0 /* mysql */ = {
+			isa = PBXGroup;
+			children = (
+				249A34E624849560008F8BD0 /* mysql_lex_string.h */,
+				249A34E724849560008F8BD0 /* service_mysql_alloc.h */,
+				249A34E824849560008F8BD0 /* plugin_auth_common.h */,
+				249A34E924849560008F8BD0 /* plugin_trace.h */,
+				249A34EA24849560008F8BD0 /* get_password.h */,
+				249A34EB24849560008F8BD0 /* service_my_snprintf.h */,
+				249A34EC24849560008F8BD0 /* client_plugin.h.pp */,
+				249A34ED24849560008F8BD0 /* client_plugin.h */,
+				249A34EE24849560008F8BD0 /* psi */,
+				249A34FE24849560008F8BD0 /* client_authentication.h */,
+			);
+			path = mysql;
+			sourceTree = "<group>";
+		};
+		249A34EE24849560008F8BD0 /* psi */ = {
+			isa = PBXGroup;
+			children = (
+				249A34EF24849560008F8BD0 /* mysql_ps.h */,
+				249A34F024849560008F8BD0 /* mysql_transaction.h */,
+				249A34F124849560008F8BD0 /* mysql_file.h */,
+				249A34F224849560008F8BD0 /* mysql_idle.h */,
+				249A34F324849560008F8BD0 /* psi.h */,
+				249A34F424849560008F8BD0 /* mysql_stage.h */,
+				249A34F524849560008F8BD0 /* mysql_table.h */,
+				249A34F624849560008F8BD0 /* psi_memory.h */,
+				249A34F724849560008F8BD0 /* psi_base.h */,
+				249A34F824849560008F8BD0 /* mysql_socket.h */,
+				249A34F924849560008F8BD0 /* mysql_sp.h */,
+				249A34FA24849560008F8BD0 /* mysql_statement.h */,
+				249A34FB24849560008F8BD0 /* mysql_thread.h */,
+				249A34FC24849560008F8BD0 /* mysql_memory.h */,
+				249A34FD24849560008F8BD0 /* mysql_mdl.h */,
+			);
+			path = psi;
+			sourceTree = "<group>";
+		};
+		249A350D24849560008F8BD0 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				249A350E24849560008F8BD0 /* libmysqlclient.a */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		249A350F24849560008F8BD0 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				249A351024849560008F8BD0 /* libmysqlclient.a */,
+			);
+			path = mac;
+			sourceTree = "<group>";
+		};
+		249A351124849560008F8BD0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				249A351224849560008F8BD0 /* NSString+OHSerialization.m */,
+				249A351324849560008F8BD0 /* NSString+Utility.m */,
+				249A351424849560008F8BD0 /* NSString+Escaping.h */,
+				249A351524849560008F8BD0 /* NSData+OHSerialization.h */,
+				249A351624849560008F8BD0 /* NSNumber+OHSerialization.h */,
+				249A351724849560008F8BD0 /* NSObject+Mapping.m */,
+				249A351824849560008F8BD0 /* NSString+Escaping.m */,
+				249A351924849560008F8BD0 /* NSString+Utility.h */,
+				249A351A24849560008F8BD0 /* NSString+OHSerialization.h */,
+				249A351B24849560008F8BD0 /* NSData+OHSerialization.m */,
+				249A351C24849560008F8BD0 /* NSNumber+OHSerialization.m */,
+				249A351D24849560008F8BD0 /* NSObject+Mapping.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		7D8355019052CD8883A9B46B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C3E104E16AEC0C297DC43B9 /* Pods-aws_chatbot.debug.xcconfig */,
+				9473264818E99AAE4EFFDE40 /* Pods-aws_chatbot.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA156F2F8A3A56B7EAEC50F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				249A3521248597A7008F8BD0 /* WebKit.framework */,
+				249A34A624849560008F8BD0 /* OHMySQL */,
+				30C709E03D17C59F42CE8029 /* Pods_aws_chatbot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		249A348C24823CFB008F8BD0 /* aws_chatbot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 249A34A124823CFC008F8BD0 /* Build configuration list for PBXNativeTarget "aws_chatbot" */;
+			buildPhases = (
+				461DD32675C726E09858E555 /* [CP] Check Pods Manifest.lock */,
+				249A348924823CFB008F8BD0 /* Sources */,
+				249A348A24823CFB008F8BD0 /* Frameworks */,
+				249A348B24823CFB008F8BD0 /* Resources */,
+				1FB8DAC9A40ED5D88DED4914 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = aws_chatbot;
+			productName = aws_chatbot;
+			productReference = 249A348D24823CFB008F8BD0 /* aws_chatbot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		249A348524823CFB008F8BD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = iOSClub;
+				TargetAttributes = {
+					249A348C24823CFB008F8BD0 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 249A348824823CFB008F8BD0 /* Build configuration list for PBXProject "aws_chatbot" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 249A348424823CFB008F8BD0;
+			productRefGroup = 249A348E24823CFB008F8BD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				249A348C24823CFB008F8BD0 /* aws_chatbot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		249A348B24823CFB008F8BD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249A349D24823CFC008F8BD0 /* LaunchScreen.storyboard in Resources */,
+				249A349A24823CFC008F8BD0 /* Assets.xcassets in Resources */,
+				249A349824823CFB008F8BD0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FB8DAC9A40ED5D88DED4914 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aws_chatbot/Pods-aws_chatbot-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aws_chatbot/Pods-aws_chatbot-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-aws_chatbot/Pods-aws_chatbot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		461DD32675C726E09858E555 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aws_chatbot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		249A348924823CFB008F8BD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249A349524823CFB008F8BD0 /* ViewController.swift in Sources */,
+				249A349124823CFB008F8BD0 /* AppDelegate.swift in Sources */,
+				249A349324823CFB008F8BD0 /* SceneDelegate.swift in Sources */,
+				249A3520248593EB008F8BD0 /* WebViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		249A349624823CFB008F8BD0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				249A349724823CFB008F8BD0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		249A349B24823CFC008F8BD0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				249A349C24823CFC008F8BD0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		249A349F24823CFC008F8BD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		249A34A024823CFC008F8BD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		249A34A224823CFC008F8BD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C3E104E16AEC0C297DC43B9 /* Pods-aws_chatbot.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XUFHKFP72P;
+				INFOPLIST_FILE = aws_chatbot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fcu.iosclub.aws-chatbot";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		249A34A324823CFC008F8BD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9473264818E99AAE4EFFDE40 /* Pods-aws_chatbot.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XUFHKFP72P;
+				INFOPLIST_FILE = aws_chatbot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fcu.iosclub.aws-chatbot";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		249A348824823CFB008F8BD0 /* Build configuration list for PBXProject "aws_chatbot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				249A349F24823CFC008F8BD0 /* Debug */,
+				249A34A024823CFC008F8BD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		249A34A124823CFC008F8BD0 /* Build configuration list for PBXNativeTarget "aws_chatbot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				249A34A224823CFC008F8BD0 /* Debug */,
+				249A34A324823CFC008F8BD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 249A348524823CFB008F8BD0 /* Project object */;
+}

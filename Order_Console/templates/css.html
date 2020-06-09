@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Order ID</th>
+            <th>Variety</th>
+            <th>Seasoning</th>
+            <th>Size</th>
+        </tr>
+        {% for item in data%}
+        <tr>
+            <td>{{item["Id"]}}</td>
+            <td>{{item["Variety"]}}</td>
+            <td>{{item["Seasoning"]}}</td>
+            <td>{{item["Size"]}}</td>
+        </tr>
+        {% endfor %}
+        
+    </table>
+</body>
+</html>
